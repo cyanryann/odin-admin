@@ -19,6 +19,7 @@ body {
 .container > div > div {
     border: 1px black solid;
 }
+
 .searchcontainer {
     display: grid;
     grid-template-columns: 10% 90%;
@@ -113,26 +114,46 @@ button {
     grid-column: 2 / 3;
     grid-row: 2 / 3; 
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 5% 45% 5% 45%;
+}
+.project-title {
+    grid-column: 1 / 2;
+    
+}
+.project-title h3 {
+    text-align:left;
+    margin-left: 20px;
 }
 .projects {
     background-color: palegreen;
     grid-column: 1 / 2;
-    grid-row: 1 / 3;
+    grid-row: 2 / 5;
+    display: grid;
+    grid-template-columns: repeat(autofill, clamp(100px, 20%, 400px));
+}
+.announcement-title {
+    grid-column: 2 / 3;
+}
+.announcement-title h3 {
+    text-align: center;
 }
 .announcements {
     background-color: green;
     grid-column: 2 / 3;
+    grid-row:2 / 3;
 }
-.announcements h3 {
+.trending-title {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+.trending-title h3 {
     text-align: center;
-    color: white;
 }
 .trending {
     background-color: greenyellow;
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-row: 4 / 5;
 }
 .account ul {
     display: grid;
