@@ -10,8 +10,8 @@ body {
     width: 100%;
     height: 100vh;
     background-color: black;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 7fr;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 10% 90%;
 }
 .container > div {
     border: 1px black solid;
@@ -21,48 +21,65 @@ body {
 }
 .searchcontainer {
     display: grid;
-    grid-template-columns: 1fr 10fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 100%;
     align-items: center;
     border: black 1px solid;
-    height: 100%;
-    gap: 10px
+    height: 80%;
+    gap: 10px;
+    margin: 10px;
+}
+#sbar {
+    background-color: rgb(228, 228, 228);
 }
 .searchcontainer label {
-    align-self: center;
-    height: 100%;
+    width: 50px;
 }
 .searchcontainer input {
-    height: 40%;
+    height: 60%;
     border-radius: 20px;
     border: none;
 }
 .header {
-    background-color: blue;
+    background-color: white;
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: 4fr 5fr;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 45% 55%;
 }
 .post {
-    background-color: red;
+    align-content: center;
 }
 .post ul {
     display: grid;
     list-style-type: none;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 
+    gap: 10px;
+    align-self: center;
+    margin: 10px;
+
+}
+ul {
     border: 1px black solid;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 li {
-    border: black 1px solid
+    border: black 1px solid;
+    display: inline-block;
+    text-align: center;
+
+
 }
 button {
     background-color: rgb(39, 156, 211);
     color: white;
-    width: 70%;
-    height: 150%;
-    border-radius: 20px;
+    width: 100%;
+    height: 3vh;
+
+    border-radius: 15px;
     border: none;
 }
 .sidebar {
@@ -70,6 +87,8 @@ button {
     color: white;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    font-size: 20px;
+    font-weight: 600;
 
 }
 .logo {
@@ -87,7 +106,7 @@ button {
 .sidebar ul {
     list-style-type: none;
     display: grid;
-    gap: 10px;
+    gap: 20px;
 }
 .main-content {
     background-color: aquamarine;
@@ -106,8 +125,25 @@ button {
     background-color: green;
     grid-column: 2 / 3;
 }
+.announcements h3 {
+    text-align: center;
+    color: white;
+}
 .trending {
     background-color: greenyellow;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+.account ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    list-style-type: none;
+    align-items: center;
+}
+.account img {
+    width: 50px;
+}
+.account h4 {
+    text-align: center;
+    color: black;
 }
