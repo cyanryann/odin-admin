@@ -122,12 +122,13 @@ button {
     gap: 20px;
 }
 .main-content {
-    background-color: rgb(226, 252, 246);
+    background-color: rgb(223, 235, 232);
     grid-column: 2 / 3;
     grid-row: 2 / 3; 
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-rows: 5% 45% 5% 45%;
+    gap: 10px;
 }
 .project-title {
     grid-column: 1 / 2;
@@ -150,16 +151,18 @@ button {
 .projects > div {
     border: 1px black solid;
     background-color: white;
+    border-radius: 10px;
     box-shadow: 1px 1px 2px rgb(126, 126, 126);
 }
 .announcement-title {
     grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 .announcement-title h3 {
     text-align: left;
 }
 .announcements {
-    background-color: green;
+    background-color: rgb(255, 255, 255);
     grid-column: 2 / 3;
     grid-row:2 / 3;
     display: grid;
@@ -167,9 +170,11 @@ button {
     grid-template-rows: 33% 33% 33%;
     gap: 10px;
     padding: 10px;
+    border-radius: 10px;
 }
 .announcements > div {
     border: black 1px solid;
+    border-radius: 10px;
     height: 80%;
 }
 .trending-title {
@@ -180,18 +185,23 @@ button {
     text-align: left;
 }
 .trending {
-    background-color: greenyellow;
+    background-color: rgb(255, 255, 255);
     grid-column: 2 / 3;
     grid-row: 4 / 5;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-rows: 20% 20% 20%;
     gap: 10px;
     padding: 10px;
 }
 .trending > div {
     border: 1px black solid;
-    height: 80%;
+    border-radius: 10px;
+    height: 50%;
+}
+.trending-account {
+    display: grid;
+    grid-template-columns: 25% 75%;
 }
 .account {
     grid-column: 3 / 4;
